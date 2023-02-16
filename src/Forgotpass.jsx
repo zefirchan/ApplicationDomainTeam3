@@ -16,9 +16,7 @@ export const Forgotpass = (props) =>{
         <div className="auth-form-container">
             <h2>Recover Password</h2>
             <form className="forgotpass-form" onSubmit={handleSubmit}>
-                <label htmlfor="username">username</label>
-                <input value={username} onChange={(e) => setUsername(e.target.value)} type="username" placeholder="enter username" id="username" name="username"/>
-                <label htmlfor="email">email</label>
+                <label htmlFor="email">email</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@mail.com" id="email" name="email"/>
                 <button type="submit">Recover Password</button>
             </form>

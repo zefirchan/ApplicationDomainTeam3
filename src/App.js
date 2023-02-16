@@ -5,6 +5,7 @@ import './App.css';
 import { Login } from './Login';
 import {Forgotpass} from './Forgotpass';
 import { Register } from './Register';
+import {AuthDetails } from './AuthDetails';
 
 
 function App() {
@@ -17,9 +18,12 @@ function App() {
   {/*toggle between login and forgot password forms */}
   return (
     <div className="App">
+      < AuthDetails/>
       {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
+        currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Forgotpass onFormSwitch={toggleForm}/>
       }   
+      < Register/>
+      
     </div>
   );
 }
