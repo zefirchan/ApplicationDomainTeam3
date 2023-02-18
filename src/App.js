@@ -9,6 +9,7 @@ import {AuthDetails } from './AuthDetails';
 import {Navbar} from './Navbar';
 
 
+
 function App() {
   {/*start app on login screen */}
   const [currentForm, setCurrentForm] = useState('login');
@@ -25,6 +26,7 @@ function App() {
         currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Forgotpass onFormSwitch={toggleForm}/>
       }   
       < Register/>
+
       
     </div>
   );
