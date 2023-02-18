@@ -8,6 +8,7 @@ import { Register } from './Register';
 import {AuthDetails } from './AuthDetails';
 
 
+
 function App() {
   {/*start app on login screen */}
   const [currentForm, setCurrentForm] = useState('login');
@@ -23,6 +24,7 @@ function App() {
         currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Forgotpass onFormSwitch={toggleForm}/>
       }   
       < Register/>
+
       
     </div>
   );

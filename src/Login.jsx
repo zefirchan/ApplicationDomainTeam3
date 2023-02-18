@@ -33,6 +33,8 @@ export const Login = (props) =>{
             </form>
             {/* switch to password form*/}
             <button className="link-btn" onClick={() =>props.onFormSwitch('forgotpass')}>Forgot password</button>
+
+            
             
         </div>
     );
