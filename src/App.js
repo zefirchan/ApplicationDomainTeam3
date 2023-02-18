@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 
 import './App.css';
+import './NavbarStyles.css'
 import { Login } from './Login';
 import {Forgotpass} from './Forgotpass';
 import { Register } from './Register';

@@ -2,7 +2,7 @@ import React from "react";
 
 import './ValidPass.css';
 
-
+//Show list of elements that password must contain and cross out if they are present
 export const MustContainElement = props => {
     const {data} = props
     const label = data[0]
