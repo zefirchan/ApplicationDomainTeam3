@@ -6,7 +6,7 @@ import './NavbarStyles.css'
 import { Login } from './Login';
 import {Forgotpass} from './Forgotpass';
 import { Register } from './Register';
-import {AuthDetails } from './AuthDetails';
+
 import {Navbar} from './Navbar';
 
 
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      < AuthDetails/>
+      
       {
         currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Forgotpass onFormSwitch={toggleForm}/>
       }   
